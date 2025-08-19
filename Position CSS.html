@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box-1{
+            background-color: red;
+            position: sticky;
+            top: 0px;
+        }
+        .box-2{
+            background-color: green;
+            position: relative;
+            top: 80px;
+            left: 42px;
+            z-index: 1;
+        }
+        .box-3{
+            background-color: blue;
+            position:absolute;
+            top:0px;
+            z-index: -1;
+        }
+        .box-4{
+            background-color: yellow;
+            position: fixed;
+            bottom: 0px;
+            left: 25vw;            
+        }
+        .box-5{
+            background-color: purple;
+            position: static;
+        }
+        .box{
+            height: 133px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+        .parent{
+            padding: 43px;
+            margin: 34px;
+            border: 2px solid black;
+            height: 900px
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box-1">Sticky</div>
+        <div class="box box-2">Relative</div>
+        <div class="box box-3">Absolute</div>
+        <div class="box box-4">Fixed</div>
+        <div class="box box-5">Static</div>
+    </div>
+</body>
+</html>
